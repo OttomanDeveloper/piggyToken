@@ -1,16 +1,33 @@
-# piggytoken
+# 🐷 PiggyToken - Crypto Landing Page
 
-A new Flutter project.
+[![Website](https://img.shields.io/badge/Visit-Live%20Site-brightgreen)](https://ottomandeveloper.github.io/piggyToken/)
+[![Flutter](https://img.shields.io/badge/Built%20with-Flutter-02569B?logo=flutter)](https://flutter.dev)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Getting Started
+A modern, responsive landing page for PiggyToken cryptocurrency built with Flutter Web. Showcasing tokenomics, roadmap, and community features.
 
-This project is a starting point for a Flutter application.
+![PiggyToken Screenshot](screenshot.png)
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Responsive Design**: Works on all devices from mobile to desktop
+- **Interactive UI**: Smooth animations and transitions
+- **Token Information**: Clear display of tokenomics and utility
+- **Roadmap Section**: Visual timeline of project milestones
+- **Community Links**: Easy access to social channels
+- **Light/Dark Mode**: Automatic system preference detection
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Live Demo
+
+Experience the live deployment:  
+👉 [https://ottomandeveloper.github.io/piggyToken/](https://ottomandeveloper.github.io/piggyToken/)
+
+## 🛠️ Technical Stack
+
+- **Framework**: [Flutter 3.x](https://flutter.dev) (Web)
+- **State Management**: Provider
+- **UI Components**: Custom design with Flutter widgets
+- **Animation**: Flutter animations package
+- **Deployment**: GitHub Pages
+
+## 🏗️ Project Structure
