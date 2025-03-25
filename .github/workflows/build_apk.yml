@@ -5,6 +5,11 @@ on:
     branches: [master] # Change to your production branch
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write # Required for OIDC token
+
 env:
   FLUTTER_VERSION: "3.27.4" # Specify your Flutter version
 
