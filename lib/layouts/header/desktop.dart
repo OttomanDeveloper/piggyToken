@@ -7,7 +7,7 @@ Widget headerDesktop(BuildContext context) {
   return Container(
     width: size.width,
     height: size.height,
-    decoration: BoxDecoration(
+    decoration: const BoxDecoration(
       image: DecorationImage(
         fit: BoxFit.cover,
         image: AssetImage(AppAsset.space1),
@@ -28,14 +28,14 @@ Widget headerDesktop(BuildContext context) {
             ),
             SizedBox(width: size.width * 0.001),
             Text(
-              "${AppSettings.safeAndro}".toUpperCase(),
+              AppSettings.safeAndro.toUpperCase(),
               textAlign: TextAlign.center,
               style: GoogleFonts.russoOne(
                 color: AppColors.white,
                 fontSize: size.height * 0.025,
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
@@ -83,12 +83,12 @@ Widget headerDesktop(BuildContext context) {
                   textAlign: TextAlign.center,
                   style: GoogleFonts.roboto(
                     fontSize: size.height * 0.03,
-                    color: AppColors.white.withOpacity(0.8),
+                    color: AppColors.white.withValues(alpha: 0.8),
                   ),
                 ),
                 SizedBox(height: size.height * 0.002),
                 Text(
-                  "${AppSettings.safeAndro}".toUpperCase(),
+                  AppSettings.safeAndro.toUpperCase(),
                   textAlign: TextAlign.center,
                   style: GoogleFonts.russoOne(
                     color: AppColors.white,
@@ -99,12 +99,12 @@ Widget headerDesktop(BuildContext context) {
                 Padding(
                   padding: EdgeInsets.only(right: size.width * 0.4),
                   child: Text(
-                    "${AppText.home}",
+                    AppText.home,
                     textAlign: TextAlign.left,
                     style: GoogleFonts.roboto(
                       fontSize: size.height * 0.022,
                       letterSpacing: size.width * 0.0005,
-                      color: AppColors.white.withOpacity(0.8),
+                      color: AppColors.white.withValues(alpha: 0.8),
                     ),
                   ),
                 ),
@@ -192,7 +192,7 @@ Widget headerDesktop(BuildContext context) {
                     horizontal: size.width * 0.005,
                   ),
                   decoration: BoxDecoration(
-                    color: AppColors.white.withOpacity(0.1),
+                    color: AppColors.white.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(size.height * 0.02),
                   ),
                   child: Row(
@@ -205,7 +205,7 @@ Widget headerDesktop(BuildContext context) {
                         textAlign: TextAlign.center,
                         style: GoogleFonts.roboto(
                           fontSize: size.height * 0.018,
-                          color: AppColors.white.withOpacity(0.9),
+                          color: AppColors.white.withValues(alpha: 0.9),
                         ),
                       ),
                       SizedBox(width: size.width * 0.01),
@@ -238,7 +238,7 @@ Widget headerDesktop(BuildContext context) {
                   ),
                 ),
                 SizedBox(height: size.height * 0.008),
-                ContractText(),
+                const ContractText(),
               ],
             ),
           ),

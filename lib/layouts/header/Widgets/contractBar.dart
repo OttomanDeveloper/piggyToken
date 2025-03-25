@@ -1,15 +1,17 @@
 import 'package:piggytoken/core/hooks/hooks.dart';
 
 class ContractText extends StatefulWidget {
+  const ContractText({super.key});
+
   @override
   _ContractTextState createState() => _ContractTextState();
 }
 
 class _ContractTextState extends State<ContractText> {
-  Color bgColor = AppColors.white.withOpacity(0.15);
+  Color bgColor = AppColors.white.withValues(alpha: 0.15);
   Color txtColor = AppColors.white;
 
-  Color bgColorBTN = AppColors.white.withOpacity(0.15);
+  Color bgColorBTN = AppColors.white.withValues(alpha: 0.15);
   Color txtColorBTN = AppColors.white;
   @override
   Widget build(BuildContext context) {
@@ -33,10 +35,10 @@ class _ContractTextState extends State<ContractText> {
               setState(() {
                 if (value) {
                   txtColor = AppColors.headerYellow;
-                  bgColor = AppColors.black.withOpacity(0.2);
+                  bgColor = AppColors.black.withValues(alpha: 0.2);
                 } else {
                   txtColor = AppColors.white;
-                  bgColor = AppColors.white.withOpacity(0.15);
+                  bgColor = AppColors.white.withValues(alpha: 0.15);
                 }
               });
             },
@@ -56,16 +58,18 @@ class _ContractTextState extends State<ContractText> {
           builder: (BuildContext context) {
             return InkWell(
               onTap: () {
-                Clipboard.setData(ClipboardData(text: AppText.contractAddress));
+                Clipboard.setData(
+                  const ClipboardData(text: AppText.contractAddress),
+                );
               },
               onHover: (value) {
                 setState(() {
                   if (value) {
                     txtColorBTN = AppColors.headerYellow;
-                    bgColorBTN = AppColors.white.withOpacity(0.35);
+                    bgColorBTN = AppColors.white.withValues(alpha: 0.35);
                   } else {
                     txtColorBTN = AppColors.white;
-                    bgColorBTN = AppColors.white.withOpacity(0.15);
+                    bgColorBTN = AppColors.white.withValues(alpha: 0.15);
                   }
                 });
               },

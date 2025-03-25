@@ -2,6 +2,7 @@ import 'package:piggytoken/core/hooks/hooks.dart';
 
 class SocialIcons extends StatelessWidget {
   const SocialIcons({
+    super.key,
     required this.asset,
     required this.onTap,
     this.isTablet = false,

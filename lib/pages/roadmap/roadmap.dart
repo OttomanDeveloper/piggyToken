@@ -1,6 +1,8 @@
 import 'package:piggytoken/core/hooks/hooks.dart';
 
 class RoadMap extends StatelessWidget {
+  const RoadMap({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -71,56 +73,56 @@ class RoadMap extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        RoadMapSteps(
+                        const RoadMapSteps(
                           quarter: "",
                           titleColor: Colors.white,
                           title: "Comming Soon",
                           description: "Comming Soon",
                         ),
                         SizedBox(height: size.height * 0.03),
-                        RoadMapSteps(
+                        const RoadMapSteps(
                           quarter: "",
                           titleColor: Colors.white,
                           title: "Comming Soon",
                           description: "Comming Soon",
                         ),
                         SizedBox(height: size.height * 0.03),
-                        RoadMapSteps(
+                        const RoadMapSteps(
                           quarter: "",
                           titleColor: Colors.white,
                           title: "Comming Soon",
                           description: "Comming Soon",
                         ),
                         SizedBox(height: size.height * 0.03),
-                        RoadMapSteps(
+                        const RoadMapSteps(
                           quarter: "",
                           titleColor: Colors.white,
                           title: "Comming Soon",
                           description: "Comming Soon",
                         ),
                         SizedBox(height: size.height * 0.03),
-                        RoadMapSteps(
+                        const RoadMapSteps(
                           quarter: "",
                           titleColor: Colors.white,
                           title: "Comming Soon",
                           description: "Comming Soon",
                         ),
                         SizedBox(height: size.height * 0.03),
-                        RoadMapSteps(
+                        const RoadMapSteps(
                           quarter: "",
                           titleColor: Colors.white,
                           title: "Comming Soon",
                           description: "Comming Soon",
                         ),
                         SizedBox(height: size.height * 0.03),
-                        RoadMapSteps(
+                        const RoadMapSteps(
                           quarter: "",
                           titleColor: Colors.white,
                           title: "Comming Soon",
                           description: "Comming Soon",
                         ),
                         SizedBox(height: size.height * 0.03),
-                        RoadMapSteps(
+                        const RoadMapSteps(
                           quarter: "",
                           titleColor: Colors.white,
                           title: "Comming Soon",
@@ -176,7 +178,7 @@ class RoadMap extends StatelessWidget {
             ),
           ),
           SizedBox(height: size.height * 0.05),
-          Container(
+          SizedBox(
             height: size.height * 0.7,
             child: Stack(
               alignment: Alignment.center,
@@ -187,15 +189,15 @@ class RoadMap extends StatelessWidget {
                 Container(
                   height: size.height,
                   width: size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        const Color(0x00222020),
-                        const Color(0x83222020),
-                        const Color(0x83222020),
-                        const Color(0x00222020),
+                        Color(0x00222020),
+                        Color(0x83222020),
+                        Color(0x83222020),
+                        Color(0x00222020),
                       ],
                     ),
                   ),
@@ -207,7 +209,7 @@ class RoadMap extends StatelessWidget {
                     quarter: "Q1 2021",
                     title: "Releasing Soon ...",
                     description: "",
-                    titleColor: AppColors.white.withOpacity(0.85),
+                    titleColor: AppColors.white.withValues(alpha: 0.85),
                   ),
                 ),
                 Positioned(
@@ -217,7 +219,7 @@ class RoadMap extends StatelessWidget {
                     quarter: "Q2 2021",
                     title: "Releasing Soon ...",
                     description: "",
-                    titleColor: AppColors.white.withOpacity(0.77),
+                    titleColor: AppColors.white.withValues(alpha: 0.77),
                   ),
                 ),
                 Positioned(
@@ -227,7 +229,7 @@ class RoadMap extends StatelessWidget {
                     quarter: "Q3 2022",
                     title: "Releasing Soon ...",
                     description: "",
-                    titleColor: AppColors.white.withOpacity(0.72),
+                    titleColor: AppColors.white.withValues(alpha: 0.72),
                   ),
                 ),
                 Positioned(
@@ -237,7 +239,7 @@ class RoadMap extends StatelessWidget {
                     quarter: "Q4 2022",
                     title: "Releasing Soon ...",
                     description: "",
-                    titleColor: AppColors.white.withOpacity(0.67),
+                    titleColor: AppColors.white.withValues(alpha: 0.67),
                   ),
                 ),
               ],
@@ -286,7 +288,7 @@ class RoadMap extends StatelessWidget {
             ),
           ),
           SizedBox(height: size.height * 0.05),
-          Container(
+          SizedBox(
             height: size.height * 0.7,
             child: Stack(
               alignment: Alignment.center,
@@ -297,15 +299,15 @@ class RoadMap extends StatelessWidget {
                 Container(
                   height: size.height,
                   width: size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        const Color(0x00222020),
-                        const Color(0x83222020),
-                        const Color(0x83222020),
-                        const Color(0x00222020),
+                        Color(0x00222020),
+                        Color(0x83222020),
+                        Color(0x83222020),
+                        Color(0x00222020),
                       ],
                     ),
                   ),
@@ -318,7 +320,7 @@ class RoadMap extends StatelessWidget {
                     quarter: "Q1 2021",
                     title: "Releasing Soon ...",
                     description: "",
-                    titleColor: AppColors.white.withOpacity(0.85),
+                    titleColor: AppColors.white.withValues(alpha: 0.85),
                   ),
                 ),
                 Positioned(
@@ -329,7 +331,7 @@ class RoadMap extends StatelessWidget {
                     quarter: "Q2 2021",
                     title: "Releasing Soon ...",
                     description: "",
-                    titleColor: AppColors.white.withOpacity(0.77),
+                    titleColor: AppColors.white.withValues(alpha: 0.77),
                   ),
                 ),
                 Positioned(
@@ -340,7 +342,7 @@ class RoadMap extends StatelessWidget {
                     quarter: "Q3 2022",
                     title: "Releasing Soon ...",
                     description: "",
-                    titleColor: AppColors.white.withOpacity(0.72),
+                    titleColor: AppColors.white.withValues(alpha: 0.72),
                   ),
                 ),
                 Positioned(
@@ -351,7 +353,7 @@ class RoadMap extends StatelessWidget {
                     quarter: "Q4 2022",
                     title: "Releasing Soon ...",
                     description: "",
-                    titleColor: AppColors.white.withOpacity(0.67),
+                    titleColor: AppColors.white.withValues(alpha: 0.67),
                   ),
                 ),
               ],
@@ -373,6 +375,7 @@ class RoadMap extends StatelessWidget {
 
 class RoadMapSteps extends StatelessWidget {
   const RoadMapSteps({
+    super.key,
     required this.title,
     required this.quarter,
     required this.titleColor,
@@ -399,7 +402,7 @@ class RoadMapSteps extends StatelessWidget {
           children: [
             SizedBox(height: size.height * 0.009),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: AppColors.white,
                 shape: BoxShape.circle,
               ),
@@ -413,7 +416,7 @@ class RoadMapSteps extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "$title",
+              title,
               textAlign: TextAlign.left,
               style: GoogleFonts.roboto(
                 color: titleColor,
@@ -423,11 +426,11 @@ class RoadMapSteps extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.005),
             Text(
-              "$description",
+              description,
               textAlign: TextAlign.left,
               style: GoogleFonts.roboto(
                 fontSize: size.height * 0.018,
-                color: AppColors.white.withOpacity(0.82),
+                color: AppColors.white.withValues(alpha: 0.82),
               ),
             ),
           ],

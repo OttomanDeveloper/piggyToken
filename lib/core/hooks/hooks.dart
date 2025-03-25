@@ -27,6 +27,5 @@ export 'package:flutter/services.dart';
 export 'package:provider/provider.dart';
 export 'package:piggytoken/main.dart';
 export 'package:flutter_svg/flutter_svg.dart';
-export 'package:flutter_test/flutter_test.dart';
 export 'package:google_fonts/google_fonts.dart';
 export 'package:url_launcher/url_launcher.dart';

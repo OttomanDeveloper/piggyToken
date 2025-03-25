@@ -2,10 +2,10 @@ import 'package:piggytoken/core/hooks/hooks.dart';
 import 'package:piggytoken/layouts/header/mobile.dart';
 
 class Header extends StatefulWidget {
-  Header({Key? key}) : super(key: key);
+  const Header({super.key});
 
   @override
-  _HeaderState createState() => _HeaderState();
+  State<Header> createState() => _HeaderState();
 }
 
 class _HeaderState extends State<Header> {

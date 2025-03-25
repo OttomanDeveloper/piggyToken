@@ -6,7 +6,7 @@ Widget headerMobile(BuildContext context) {
   return Container(
     width: size.width,
     height: size.height,
-    decoration: BoxDecoration(
+    decoration: const BoxDecoration(
       color: AppColors.parent,
       image: DecorationImage(
         fit: BoxFit.cover,
@@ -100,9 +100,9 @@ Widget headerMobile(BuildContext context) {
               onClick.globalKey.currentState!.openDrawer();
             }
           },
-          icon: Icon(Icons.menu_outlined),
+          icon: const Icon(Icons.menu_outlined),
           iconSize: size.height * 0.03,
-          color: AppColors.white.withOpacity(0.75),
+          color: AppColors.white.withValues(alpha: 0.75),
         ),
         backgroundColor: AppColors.parent,
         centerTitle: true,
@@ -117,7 +117,7 @@ Widget headerMobile(BuildContext context) {
             ),
             SizedBox(width: size.width * 0.025),
             Text(
-              "${AppSettings.safeAndro}".toUpperCase(),
+              AppSettings.safeAndro.toUpperCase(),
               textAlign: TextAlign.center,
               style: GoogleFonts.russoOne(
                 color: AppColors.blue,
@@ -135,12 +135,12 @@ Widget headerMobile(BuildContext context) {
             textAlign: TextAlign.center,
             style: GoogleFonts.roboto(
               fontSize: size.height * 0.022,
-              color: AppColors.white.withOpacity(0.8),
+              color: AppColors.white.withValues(alpha: 0.8),
             ),
           ),
           SizedBox(height: size.height * 0.006),
           Text(
-            "${AppSettings.safeAndro}".toUpperCase(),
+            AppSettings.safeAndro.toUpperCase(),
             textAlign: TextAlign.center,
             style: GoogleFonts.russoOne(
               color: AppColors.white,
@@ -153,10 +153,10 @@ Widget headerMobile(BuildContext context) {
               horizontal: size.width * 0.1,
             ),
             child: Text(
-              "${AppText.home}",
+              AppText.home,
               textAlign: TextAlign.center,
               style: GoogleFonts.roboto(
-                color: AppColors.white.withOpacity(0.75),
+                color: AppColors.white.withValues(alpha: 0.75),
                 fontSize: size.height * 0.021,
               ),
             ),
@@ -239,7 +239,7 @@ Widget headerMobile(BuildContext context) {
               horizontal: size.width * 0.02,
             ),
             decoration: BoxDecoration(
-              color: AppColors.white.withOpacity(0.1),
+              color: AppColors.white.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(size.height * 0.02),
             ),
             child: Row(

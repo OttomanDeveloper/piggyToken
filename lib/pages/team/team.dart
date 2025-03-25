@@ -1,7 +1,7 @@
 import 'package:piggytoken/core/hooks/hooks.dart';
 
 class TeamMember extends StatefulWidget {
-  TeamMember({Key? key}) : super(key: key);
+  const TeamMember({super.key});
 
   @override
   _TeamMemberState createState() => _TeamMemberState();
@@ -207,6 +207,7 @@ class _TeamMemberState extends State<TeamMember> {
 
 class TeamCard extends StatefulWidget {
   const TeamCard({
+    super.key,
     required this.name,
     required this.specialist,
     required this.asset,
@@ -265,7 +266,7 @@ class _TeamCardState extends State<TeamCard> {
             border: Border.all(
               color: _isHover ? AppColors.headerYellow : AppColors.parent,
             ),
-            gradient: LinearGradient(
+            gradient: const LinearGradient(
               colors: [
                 AppColors.teamCard1,
                 AppColors.teamCard2,
@@ -295,7 +296,7 @@ class _TeamCardState extends State<TeamCard> {
               ),
               SizedBox(height: size.height * 0.015),
               Text(
-                '${widget.name}',
+                widget.name,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.roboto(
                   color: AppColors.headerYellow,
@@ -311,7 +312,7 @@ class _TeamCardState extends State<TeamCard> {
                   Expanded(child: teamLine(size)),
                   SizedBox(width: size.width * 0.0045),
                   Text(
-                    '${widget.specialist}',
+                    widget.specialist,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.roboto(
                       fontSize: size.height * 0.0163,

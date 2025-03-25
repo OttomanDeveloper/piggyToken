@@ -2,7 +2,7 @@ import 'package:piggytoken/core/hooks/hooks.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class StarterScreen extends StatefulWidget {
-  StarterScreen({Key? key}) : super(key: key);
+  const StarterScreen({super.key});
 
   @override
   _StarterScreenState createState() => _StarterScreenState();
@@ -19,15 +19,15 @@ class _StarterScreenState extends State<StarterScreen> {
 
   Widget sectionWidget(int i) {
     if (i == 0) {
-      return Header();
+      return const Header();
     } else if (i == 1) {
-      return IntroToken();
+      return const IntroToken();
     } else if (i == 2) {
-      return RoadMap();
+      return const RoadMap();
     } else if (i == 3) {
-      return TeamMember();
+      return const TeamMember();
     } else if (i == 4) {
-      return Bottom();
+      return const Bottom();
     } else {
       return Container();
     }
@@ -54,7 +54,7 @@ class _StarterScreenState extends State<StarterScreen> {
                   context.read<NavProvider>().itemScrollController,
               itemPositionsListener:
                   context.read<NavProvider>().itemPositionsListener,
-              physics: AlwaysScrollableScrollPhysics(),
+              physics: const AlwaysScrollableScrollPhysics(),
               addAutomaticKeepAlives: true,
               itemBuilder: (BuildContext context, int index) {
                 return sectionWidget(index);
@@ -67,12 +67,12 @@ class _StarterScreenState extends State<StarterScreen> {
               ? FloatingActionButton(
                   onPressed: () => pro.scroll(index: 0),
                   backgroundColor: AppColors.headerYellow,
-                  child: Icon(
+                  child: const Icon(
                     Icons.keyboard_arrow_up_outlined,
                     color: AppColors.black,
                   ),
                 )
-              : SizedBox(),
+              : const SizedBox(),
         ),
       ),
     );

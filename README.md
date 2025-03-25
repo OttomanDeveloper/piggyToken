@@ -42,7 +42,7 @@ Experience the live deployment:
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/OttoManDeveloper/piggyToken.git
+git clone https://github.com/OttomanDeveloper/piggyToken.git
 cd piggyToken
 
 # 2. Install dependencies

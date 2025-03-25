@@ -1,9 +1,8 @@
 import 'package:piggytoken/core/hooks/hooks.dart';
 
 void main() {
-  runApp(
-    MultiProvider(child: StarterScreen(), providers: [
-      ChangeNotifierProvider<NavProvider>(create: (_) => NavProvider())
-    ]),
-  );
+  runApp(MultiProvider(
+    providers: [ChangeNotifierProvider(create: (_) => NavProvider())],
+    child: const StarterScreen(),
+  ));
 }

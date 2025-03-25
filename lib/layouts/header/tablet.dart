@@ -6,7 +6,7 @@ Widget headerTablet(BuildContext context) {
   return Container(
     width: size.width,
     height: size.height,
-    decoration: BoxDecoration(
+    decoration: const BoxDecoration(
       color: AppColors.parent,
       image: DecorationImage(
         fit: BoxFit.cover,
@@ -92,7 +92,7 @@ Widget headerTablet(BuildContext context) {
         ),
       ),
       appBar: AppBar(
-        leading: SizedBox.shrink(),
+        leading: const SizedBox.shrink(),
         backgroundColor: AppColors.parent,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -105,7 +105,7 @@ Widget headerTablet(BuildContext context) {
             ),
             SizedBox(width: size.width * 0.015),
             Text(
-              "${AppSettings.safeAndro}".toUpperCase(),
+              AppSettings.safeAndro.toUpperCase(),
               textAlign: TextAlign.center,
               style: GoogleFonts.russoOne(
                 color: AppColors.blue,
@@ -129,7 +129,7 @@ Widget headerTablet(BuildContext context) {
                 Icon(
                   Icons.menu_outlined,
                   size: size.height * 0.025,
-                  color: AppColors.white.withOpacity(0.75),
+                  color: AppColors.white.withValues(alpha: 0.75),
                 ),
                 SizedBox(width: size.width * 0.006),
                 Text(
@@ -137,7 +137,7 @@ Widget headerTablet(BuildContext context) {
                   textAlign: TextAlign.center,
                   style: GoogleFonts.roboto(
                     fontSize: size.height * 0.019,
-                    color: AppColors.white.withOpacity(0.72),
+                    color: AppColors.white.withValues(alpha: 0.72),
                   ),
                 ),
               ],
@@ -154,12 +154,12 @@ Widget headerTablet(BuildContext context) {
             textAlign: TextAlign.center,
             style: GoogleFonts.roboto(
               fontSize: size.height * 0.025,
-              color: AppColors.white.withOpacity(0.8),
+              color: AppColors.white.withValues(alpha: 0.8),
             ),
           ),
           SizedBox(height: size.height * 0.009),
           Text(
-            "${AppSettings.safeAndro}".toUpperCase(),
+            AppSettings.safeAndro.toUpperCase(),
             textAlign: TextAlign.center,
             style: GoogleFonts.russoOne(
               color: AppColors.white,
@@ -172,11 +172,11 @@ Widget headerTablet(BuildContext context) {
               horizontal: size.width * 0.1,
             ),
             child: Text(
-              "${AppText.home}",
+              AppText.home,
               textAlign: TextAlign.center,
               style: GoogleFonts.roboto(
                 fontSize: size.height * 0.025,
-                color: AppColors.white.withOpacity(0.8),
+                color: AppColors.white.withValues(alpha: 0.8),
               ),
             ),
           ),
@@ -263,7 +263,7 @@ Widget headerTablet(BuildContext context) {
               horizontal: size.width * 0.02,
             ),
             decoration: BoxDecoration(
-              color: AppColors.white.withOpacity(0.1),
+              color: AppColors.white.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(size.height * 0.02),
             ),
             child: Row(
@@ -276,7 +276,7 @@ Widget headerTablet(BuildContext context) {
                   textAlign: TextAlign.center,
                   style: GoogleFonts.roboto(
                     fontSize: size.height * 0.018,
-                    color: AppColors.white.withOpacity(0.9),
+                    color: AppColors.white.withValues(alpha: 0.9),
                   ),
                 ),
                 SizedBox(width: size.width * 0.012),

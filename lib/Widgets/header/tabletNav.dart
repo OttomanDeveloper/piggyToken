@@ -2,6 +2,7 @@ import 'package:piggytoken/core/hooks/hooks.dart';
 
 class TabletNav extends StatelessWidget {
   const TabletNav({
+    super.key,
     required this.title,
     required this.onTap,
   });
@@ -19,12 +20,12 @@ class TabletNav extends StatelessWidget {
       child: GestureDetector(
         onTap: () => onTap(),
         child: Text(
-          "$title",
+          title,
           textAlign: TextAlign.center,
           style: GoogleFonts.roboto(
             fontWeight: FontWeight.w500,
             fontSize: size.height * 0.02,
-            color: AppColors.white.withOpacity(0.73),
+            color: AppColors.white.withValues(alpha: 0.73),
           ),
         ),
       ),

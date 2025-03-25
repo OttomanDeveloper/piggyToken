@@ -6,6 +6,7 @@ class NavButton extends StatefulWidget {
   final VoidCallback onTap;
 
   const NavButton({
+    super.key,
     required this.title,
     this.isBuy = false,
     required this.onTap,

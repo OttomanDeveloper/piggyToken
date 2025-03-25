@@ -1,10 +1,10 @@
 import 'package:piggytoken/core/hooks/hooks.dart';
 
 class IntroToken extends StatefulWidget {
-  IntroToken({Key? key}) : super(key: key);
+  const IntroToken({super.key});
 
   @override
-  _IntroTokenState createState() => _IntroTokenState();
+  State<IntroToken> createState() => _IntroTokenState();
 }
 
 class _IntroTokenState extends State<IntroToken> {
@@ -62,7 +62,7 @@ class _IntroTokenState extends State<IntroToken> {
                   ),
                   SizedBox(height: size.height * 0.015),
                   Text(
-                    "${AppText.tokenInfoTite}",
+                    AppText.tokenInfoTite,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.russoOne(
                       color: AppColors.white,
@@ -71,12 +71,12 @@ class _IntroTokenState extends State<IntroToken> {
                   ),
                   SizedBox(height: size.height * 0.02),
                   Text(
-                    "${AppText.tokenInfoDescription}",
+                    AppText.tokenInfoDescription,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.roboto(
                       letterSpacing: 1.7,
                       fontSize: size.height * 0.02,
-                      color: AppColors.white.withOpacity(0.85),
+                      color: AppColors.white.withValues(alpha: 0.85),
                     ),
                   ),
                 ],
@@ -127,7 +127,7 @@ class _IntroTokenState extends State<IntroToken> {
           ),
           SizedBox(height: size.height * 0.025),
           Text(
-            "${AppText.tokenInfoTite}",
+            AppText.tokenInfoTite,
             textAlign: TextAlign.center,
             style: GoogleFonts.russoOne(
               color: AppColors.white,
@@ -136,12 +136,12 @@ class _IntroTokenState extends State<IntroToken> {
           ),
           SizedBox(height: size.height * 0.045),
           Text(
-            "${AppText.tokenInfoDescription}",
+            AppText.tokenInfoDescription,
             textAlign: TextAlign.center,
             style: GoogleFonts.roboto(
               letterSpacing: 1.7,
               fontSize: size.height * 0.03,
-              color: AppColors.white.withOpacity(0.8),
+              color: AppColors.white.withValues(alpha: 0.8),
             ),
           ),
         ],
@@ -179,7 +179,7 @@ class _IntroTokenState extends State<IntroToken> {
           ),
           SizedBox(height: size.height * 0.025),
           Text(
-            "${AppText.tokenInfoTite}",
+            AppText.tokenInfoTite,
             textAlign: TextAlign.center,
             style: GoogleFonts.russoOne(
               color: AppColors.white,
@@ -188,12 +188,12 @@ class _IntroTokenState extends State<IntroToken> {
           ),
           SizedBox(height: size.height * 0.023),
           Text(
-            "${AppText.tokenInfoDescription}",
+            AppText.tokenInfoDescription,
             textAlign: TextAlign.center,
             style: GoogleFonts.roboto(
               letterSpacing: 1.4,
               fontSize: size.height * 0.024,
-              color: AppColors.white.withOpacity(0.8),
+              color: AppColors.white.withValues(alpha: 0.8),
             ),
           ),
         ],
