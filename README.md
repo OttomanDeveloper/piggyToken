@@ -6,7 +6,7 @@
 
 A modern, responsive landing page for PiggyToken cryptocurrency built with Flutter Web. Showcasing tokenomics, roadmap, and community features.
 
-![PiggyToken Screenshot](screenshot.png)
+![PiggyToken Screenshot](landing_page_image.png)
 
 ## ✨ Features
 
@@ -30,4 +30,24 @@ Experience the live deployment:
 - **Animation**: Flutter animations package
 - **Deployment**: GitHub Pages
 
-## 🏗️ Project Structure
+## 🖥️ Local Development
+
+### Prerequisites
+
+- Flutter SDK 3.27.0+
+- Dart SDK 3.6.0+
+- Chrome (for web testing)
+
+### Setup
+
+```bash
+# 1. Clone repository
+git clone https://github.com/OttoManDeveloper/piggyToken.git
+cd piggyToken
+
+# 2. Install dependencies
+flutter pub get
+
+# 3. Run development server
+flutter run -d chrome
+```
