@@ -12,11 +12,15 @@ permissions:
 
 env:
   FLUTTER_VERSION: "3.27.4" # Specify your Flutter version
+  PAGE_BRANCH: gh-pages # Branch for GitHub Pages
 
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,7 +35,7 @@ jobs:
         run: flutter pub get
 
       - name: Build Flutter Web
-        run: flutter build web --release --base-href "/piggyToken/" # Replace with your repo name
+        run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
         env:
           FLUTTER_WEB: true
 
